@@ -1,0 +1,400 @@
+{
+  "version": "1.0.0",
+  "createdAt": "2026-10-10T09:53:23.341Z",
+  "appName": "Library Management System - Shahd Al-Maarif",
+  "data": {
+    "users": [
+      {
+        "_id": "6aca0759b29d055a767f60cc",
+        "name": "مدير النظام",
+        "username": "admin",
+        "password": "$2a$10$KlhaNK01MZCXF5VqVvjRa.vaOGS/zze6UaR8l0NQH6i6U8giBdHDK",
+        "role": "admin",
+        "permissions": {
+          "canManageProducts": true,
+          "canCreateMovements": true,
+          "canViewReports": true,
+          "canManageSettings": true,
+          "canManageUsers": true,
+          "canPerformStocktake": true
+        },
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.353Z",
+        "updatedAt": "2026-10-10T09:37:29.353Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60d5",
+        "name": "أحمد موظف المخزن",
+        "username": "employee",
+        "password": "$2a$10$A0MlLQttfr2GHFixjNWtzeFPu0/E.KRGg8odN8mA/HGRW1.bOXr1u",
+        "role": "employee",
+        "permissions": {
+          "canManageProducts": true,
+          "canCreateMovements": true,
+          "canViewReports": true,
+          "canManageSettings": false,
+          "canManageUsers": false,
+          "canPerformStocktake": false
+        },
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.613Z",
+        "updatedAt": "2026-10-10T09:37:29.613Z",
+        "__v": 0
+      }
+    ],
+    "categories": [
+      {
+        "_id": "6aca0759b29d055a767f60da",
+        "name": "أقلام ومحابر",
+        "description": "أقلام حبر وجاف وتحديد ورصاص",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.780Z",
+        "updatedAt": "2026-10-10T09:37:29.780Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60dd",
+        "name": "دفاتر وكشاكيل",
+        "description": "دفاتر سلك وعادية ومذكرات",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.785Z",
+        "updatedAt": "2026-10-10T09:37:29.785Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60e0",
+        "name": "ورق وطباعة",
+        "description": "ورق تصوير A4 وورق مقوى وملون",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.791Z",
+        "updatedAt": "2026-10-10T09:37:29.791Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60e3",
+        "name": "أدوات هندسية ومساطر",
+        "description": "مساطر ومثلثات وبراجيل وأدوات قياس",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.797Z",
+        "updatedAt": "2026-10-10T09:37:29.797Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60e6",
+        "name": "أدوات فنية ورسم",
+        "description": "ألوان مائية وخشبية وكراسات رسم وفرش",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.801Z",
+        "updatedAt": "2026-10-10T09:37:29.801Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60e9",
+        "name": "مستلزمات طابعات وأحبار",
+        "description": "خراطيش حبر وليزر وطابعات حرارية",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.806Z",
+        "updatedAt": "2026-10-10T09:37:29.806Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60ec",
+        "name": "ملفات وحافظات أوراق",
+        "description": "ملفات حفظ وثائق وبلاستيكية ومعدنية",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.811Z",
+        "updatedAt": "2026-10-10T09:37:29.811Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60ef",
+        "name": "أدوات مكتبية عامة",
+        "description": "دباسات، خرامات، مقصات، ولواصق",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.817Z",
+        "updatedAt": "2026-10-10T09:37:29.817Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60f2",
+        "name": "هدايا وتحف مدرسية",
+        "description": "إطارات وميداليات وحقائب مدرسية",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.821Z",
+        "updatedAt": "2026-10-10T09:37:29.821Z",
+        "__v": 0
+      }
+    ],
+    "products": [
+      {
+        "_id": "6aca0759b29d055a767f610f",
+        "code": "PAP-001",
+        "name": "ورق تصوير Double A مقاس A4 وزن 80 جرام",
+        "category": "6aca0759b29d055a767f60e0",
+        "unit": "رزمة",
+        "purchasePrice": 18.5,
+        "sellingPrice": 24,
+        "openingStock": 120,
+        "currentStock": 120,
+        "minStock": 25,
+        "description": "كرتون يحتوي 5 رزم ممتازة للطباعة",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.891Z",
+        "updatedAt": "2026-10-10T09:37:29.891Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f6112",
+        "code": "PEN-001",
+        "name": "أقلام جاف روتو أزرق 0.7 مم (باكت 50 قلم)",
+        "category": "6aca0759b29d055a767f60da",
+        "unit": "علبة",
+        "purchasePrice": 35,
+        "sellingPrice": 48,
+        "openingStock": 45,
+        "currentStock": 45,
+        "minStock": 10,
+        "description": "أقلام زرقاء ناعمة وسريعة الجفاف",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.901Z",
+        "updatedAt": "2026-10-10T09:37:29.901Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f6115",
+        "code": "PEN-002",
+        "name": "أقلام تظليل هايلايتر باستيل (طقم 6 ألوان)",
+        "category": "6aca0759b29d055a767f60da",
+        "unit": "طقم",
+        "purchasePrice": 12,
+        "sellingPrice": 18,
+        "openingStock": 60,
+        "currentStock": 60,
+        "minStock": 15,
+        "description": "ألوان هادئة للتركيز والمذاكرة",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.906Z",
+        "updatedAt": "2026-10-10T09:37:29.906Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f6118",
+        "code": "NBK-001",
+        "name": "دفتر سلك جامعي 200 ورقة مسطر مقسم 5 أقسام",
+        "category": "6aca0759b29d055a767f60dd",
+        "unit": "قطعة",
+        "purchasePrice": 14,
+        "sellingPrice": 22,
+        "openingStock": 80,
+        "currentStock": 80,
+        "minStock": 20,
+        "description": "غلاف مقوى بلاستيكي مقاوم للماء",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.911Z",
+        "updatedAt": "2026-10-10T09:37:29.911Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f611b",
+        "code": "ART-001",
+        "name": "ألوان خشبية مائية فابر كاستل 24 لون",
+        "category": "6aca0759b29d055a767f60e6",
+        "unit": "علبة",
+        "purchasePrice": 32,
+        "sellingPrice": 45,
+        "openingStock": 30,
+        "currentStock": 30,
+        "minStock": 8,
+        "description": "ألوان فنية أصلية للرسم الاحترافي",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.915Z",
+        "updatedAt": "2026-10-10T09:37:29.915Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f611e",
+        "code": "OFC-001",
+        "name": "دباسة كانجارو معدنية متوسطة مع علبة دبابيس",
+        "category": "6aca0759b29d055a767f60ef",
+        "unit": "قطعة",
+        "purchasePrice": 16.5,
+        "sellingPrice": 25,
+        "openingStock": 4,
+        "currentStock": 19,
+        "minStock": 6,
+        "description": "دباسة معدنية ثقيلة للمكاتب والمدارس",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.920Z",
+        "updatedAt": "2026-10-10T09:53:23.195Z",
+        "__v": 0
+      }
+    ],
+    "stockMovements": [
+      {
+        "_id": "6aca0b130e427d8fa296882e",
+        "movementNumber": "IN-20261010-0001-4269",
+        "product": "6aca0759b29d055a767f611e",
+        "type": "IN",
+        "quantity": 20,
+        "unitPrice": 16.5,
+        "totalValue": 330,
+        "date": "2026-10-10T09:53:23.134Z",
+        "supplier": null,
+        "recipient": null,
+        "reason": "purchase",
+        "reference": "INV-AUTO-TEST",
+        "notes": "اختبار توريد تلقائي",
+        "stockBefore": 4,
+        "stockAfter": 24,
+        "createdBy": "6aca0759b29d055a767f60cc",
+        "reversedMovement": null,
+        "isReversed": false,
+        "createdAt": "2026-10-10T09:53:23.148Z",
+        "updatedAt": "2026-10-10T09:53:23.148Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0b130e427d8fa2968836",
+        "movementNumber": "OUT-20261010-0002-9318",
+        "product": "6aca0759b29d055a767f611e",
+        "type": "OUT",
+        "quantity": 5,
+        "unitPrice": 16.5,
+        "totalValue": 82.5,
+        "date": "2026-10-10T09:53:23.190Z",
+        "supplier": null,
+        "recipient": null,
+        "reason": "sale",
+        "reference": "OUT-REC-001",
+        "notes": "",
+        "stockBefore": 24,
+        "stockAfter": 19,
+        "createdBy": "6aca0759b29d055a767f60cc",
+        "reversedMovement": null,
+        "isReversed": false,
+        "createdAt": "2026-10-10T09:53:23.193Z",
+        "updatedAt": "2026-10-10T09:53:23.193Z",
+        "__v": 0
+      }
+    ],
+    "suppliers": [
+      {
+        "_id": "6aca0759b29d055a767f60f5",
+        "name": "شركة الأهرام للتوريدات المكتبية",
+        "phone": "+966511111111",
+        "address": "الرياض - حي الملز",
+        "contactPerson": "سالم المنصور",
+        "notes": "",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.835Z",
+        "updatedAt": "2026-10-10T09:37:29.835Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60f8",
+        "name": "مؤسسة الرواد للقرطاسية والأوراق",
+        "phone": "+966522222222",
+        "address": "جدة - شارع الستين",
+        "contactPerson": "فهد العتيبي",
+        "notes": "",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.843Z",
+        "updatedAt": "2026-10-10T09:37:29.843Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f60fb",
+        "name": "وكالة الفنون ومستلزمات الرسم",
+        "phone": "+966533333333",
+        "address": "الدمام - السوق المركزي",
+        "contactPerson": "طارق زياد",
+        "notes": "",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.848Z",
+        "updatedAt": "2026-10-10T09:37:29.848Z",
+        "__v": 0
+      }
+    ],
+    "recipients": [
+      {
+        "_id": "6aca0759b29d055a767f60fe",
+        "name": "قسم المحاسبة والإدارة",
+        "type": "department",
+        "contactPerson": "ماجد القحطاني",
+        "phone": "+966544444444",
+        "address": "",
+        "notes": "",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.853Z",
+        "updatedAt": "2026-10-10T09:37:29.853Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f6101",
+        "name": "مدرسة الأمل النموذجية",
+        "type": "customer",
+        "contactPerson": "أ. خالد الحربي",
+        "phone": "+966555555555",
+        "address": "",
+        "notes": "",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.859Z",
+        "updatedAt": "2026-10-10T09:37:29.859Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f6104",
+        "name": "فرع المكتبة رقم 2",
+        "type": "branch",
+        "contactPerson": "سعد الشهري",
+        "phone": "+966566666666",
+        "address": "",
+        "notes": "",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.863Z",
+        "updatedAt": "2026-10-10T09:37:29.863Z",
+        "__v": 0
+      },
+      {
+        "_id": "6aca0759b29d055a767f6107",
+        "name": "عملاء المبيعات المباشرة",
+        "type": "customer",
+        "contactPerson": "نقطة البيع الرئيسية",
+        "phone": "",
+        "address": "",
+        "notes": "",
+        "isActive": true,
+        "createdAt": "2026-10-10T09:37:29.868Z",
+        "updatedAt": "2026-10-10T09:37:29.868Z",
+        "__v": 0
+      }
+    ],
+    "stocktakings": [],
+    "settings": [
+      {
+        "_id": "6aca0759b29d055a767f6121",
+        "storeName": "مكتبة شهد المعارف للقرطاسية والأدوات المكتبية",
+        "storeAddress": "شارع المعرفة - المملكة العربية السعودية",
+        "storePhone": "+966500123456",
+        "currency": "ر.س",
+        "taxNumber": "300123456700003",
+        "lowStockThresholdDefault": 5,
+        "units": [
+          "قطعة",
+          "علبة",
+          "درزن",
+          "رزمة",
+          "كرتون",
+          "حزمة",
+          "طقم",
+          "متر"
+        ],
+        "receiptFooterNote": "نسعد بخدمتكم دائماً في مكتبة شهد المعارف",
+        "createdAt": "2026-10-10T09:37:29.928Z",
+        "updatedAt": "2026-10-10T09:37:29.928Z",
+        "__v": 0
+      }
+    ]
+  }
+}
